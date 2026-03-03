@@ -1,3 +1,9 @@
+""" 1.cd BasicPython
+    2.git add .
+    3.git commit -m "Added new file inside src folder "
+    4.git push origin main
+"""
+
 # ------------ Q1 Write a program to swap two variables
 # ------------ Q2 Write a program to check if a number is even or odd.
 # ------------ Q3 Write a program to find the square root of a number
