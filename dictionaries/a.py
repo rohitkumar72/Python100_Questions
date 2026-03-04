@@ -138,11 +138,23 @@ print("min value",minx)
 
 
 # ------------ Q8 Write a program to invert a dictionary (swap keys and values).
+"""mth1 """
 d={'a':1,'b':2,'c':3,'d':4}
 
 new_dic ={}
 for k,v in d.items():
     new_dic[v]=k
+print(new_dic)
+
+"""mth 2 Optimise version"""
+d = {'a':1, 'b':2, 'c':1}
+new_dic = {}
+for k, v in d.items():
+    if v in new_dic:
+        new_dic[v].append(k)
+    else:
+        new_dic[v] = [k]
+
 print(new_dic)
 
 # ------------ Q9 Write a program to count the frequency of characters in a string using a dictionary.
