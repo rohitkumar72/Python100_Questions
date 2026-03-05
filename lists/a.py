@@ -1,6 +1,9 @@
+# Q -- 4, 5, 6 , 7, 8 , 9 think logical before hit and trail 
+"""rata gaya hai abhi utne aache se understanding nahi hui hai """
+
 # ------------ Q1 Write a program to create a list of the first 10 even numbers
 # ------------ Q2 Write a program to remove duplicates from a list.
-# ------------ Q3 Write a program to find the second-largest number in a list.
+# ------------ Q3 Write a program to find the second-largest number in a list
 # ------------ Q4 Write a program to merge two sorted lists into one sorted list.
 # ------------ Q5 Write a program to find the frequency of each element in a list.
 # ------------ Q6 Write a program to check if two lists are equal.
