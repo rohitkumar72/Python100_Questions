@@ -51,7 +51,7 @@ print("original no: ",org)
 print("reverse no: ", s)
 
 # 4. Write a program to check if a number is an Armstrong number.
-n=371
+n=int(input())
 original=n
 org = n
 c=0
@@ -89,7 +89,7 @@ n=int(input())
 
 for i in range(2,n+1):
     c=0
-    for j in range(1,n+1):
+    for j in range(1,i+1):
         if i % j ==0: 
             c+=1
 
@@ -97,6 +97,22 @@ for i in range(2,n+1):
     if c==2:
         print(i, end=" ")
 
+"""correct verions """
+n = int(input())  # number of primes to print
+count = 0
+i = 2
+while count < n:
+    for j in range(2, i):
+        if i % j == 0:
+            break
+    else:
+        print(i, end=" ")
+        count += 1
+    i += 1
+
+"""output:10
+2 3 5 7 11 13 17 19 23 29 
+"""
 # 8. Write a program to check if a year is a leap year.
 a=int(input())
 
@@ -107,13 +123,13 @@ else:
 
 # 9. Write a program to print the sum of even and odd numbers in a given range.
 n=int(input())
-e=[]
-o=[]
+e=0
+o=0
 for i in range(1,n+1):
     if i % 2==0:
-        e.append(i)
+        e+=i
     else:
-        o.append(i)
+        o+=i
 
 print("even no till n :",e)
 print("odd no till n: ",o)
@@ -134,7 +150,7 @@ print("odd no till n: ",o)
 # i= 2  j=2   space n-i  5 star
 
 n=int(input())
-for i in range(n-1):
+for i in range(n):
     for j in range(1,n-i-1):
         print(" ",end="")
   
